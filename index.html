@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Цифровая безопасность</title>
+  </head>
+  <body>
+    <section id="welcome-banner">
+      <header>
+        <div
+          style="
+            display: flex;
+            gap: 1.5vw;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <img src="./images/siteLogo.png" alt="" />
+          <h2 style="margin: 0" onclick="fadeOut(block, 400, './index.html');">
+            #СохранимСебяВБезопасности
+          </h2>
+        </div>
+        <div>
+          <a
+            href=""
+            class="welcome-link"
+            style="pointer-events: none; color: rgb(150, 150, 150)"
+            >О нас</a
+          >
+          <a
+            onclick="fadeOut(block, 400, './encryptionPage/encryption.html');"
+            class="welcome-link"
+            >Шифрование текста</a
+          >
+          <a
+            onclick="fadeOut(block, 400, './passwordPage/passworg.html');"
+            class="welcome-link"
+            >Генератор паролей</a
+          >
+        </div>
+        <div style="margin-right: 3vw">
+          <a
+            class="authorization"
+            id="user"
+            onclick="fadeOut(block, 400, './registrationPage/registrationPage.html');"
+            >Войти / Зарегистрироваться</a
+          >
+        </div>
+      </header>
+      <div id="welcome-main">
+        <div class="welcome-main-text">
+          <h1>
+            Цифровая <br />
+            безопасность
+          </h1>
+          <p>
+            В современном мире интернет стал неотъемлемой частью нашей
+            повседневной жизни. Мы используем его для работы, общения, покупок,
+            обучения и многого другого. На этом сайте мы познакомим и научим вас
+            основам ведения безопасной жизни в интернете, а также мы создадим с
+            вами свой собственный шифр и пароль
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="article">
+      <h2>Статья</h2>
+      <h1>Важность информационной защиты</h1>
+      <p>
+        ㅤㅤ•Каждый день миллионы пользователей сталкиваются с угрозами в
+        интернете: вирусами, мошенничеством, кибербуллингом и другими
+        опасностями. Поэтому очень важно быть бдительным и оберегать себя от
+        возможных угроз. <br />
+        <!-- <br /> -->
+        ㅤㅤ•Важно следить за своей конфиденциальностью в сети. Не доверяйте
+        личные данные незнакомым людям, не разглашайте пароли, пин-коды и другую
+        конфиденциальную информацию. <br />
+        <!-- <br /> -->
+        ㅤㅤ•Осторожность в интернете также означает быть осторожным при
+        посещении недоверенных сайтов и открытии подозрительных писем. Часто с
+        помощью подобных махинаций киберпреступники могут получить доступ к
+        вашим данным или установить вредоносное ПО на ваш компьютер. <br />
+        <!-- <br /> -->
+        ㅤㅤ•Наконец, важно помнить о безопасности в социальных сетях. Будьте
+        осторожны при публикации личных фотографий и информации, установите
+        настройки приватности на максимальный уровень и не добавляйте в друзья
+        незнакомцев.
+      </p>
+      <p align="right"><em>Аноним</em></p>
+    </section>
+
+    <section id="advise">
+      <div id="advise-card1">
+        <h1>Рекомендации для пользователей</h1>
+      </div>
+
+      <div id="advise-card2">
+        <div class="card card1">
+          <img src="./images/key.png" alt="" />
+          <p id="card1">
+            Используйте надежные пароли и не используйте их повторно. Создайте
+            сложные пароли, состоящие из комбинации букв, цифр и символов...
+          </p>
+          <button id="card-button1">Смотреть Далее -></button>
+        </div>
+
+        <div class="card card2">
+          <img src="./images/virus.png" alt="" />
+          <p id="card2">
+            Обновляйте программное обеспечение и антивирусное ПО. Периодически
+            проверяйте наличие обновлений для всех установленных программ и
+            операционной системы...
+          </p>
+          <button id="card-button2">Смотреть Далее -></button>
+        </div>
+
+        <div class="card card3">
+          <img src="./images/link.png" alt="" />
+          <p id="card3">
+            Будьте осторожны при открытии вложений и ссылок. Не открывайте
+            непонятные письма с вложениями или подозрительные ссылки...
+          </p>
+          <button id="card-button3">Смотреть Далее -></button>
+        </div>
+
+        <div class="card card4">
+          <img src="./images/wifi.png" alt="" />
+          <p id="card4">
+            Не передавайте личные данные по незащищенным каналам связи.
+            Избегайте передачи личной информации через незащищенные Wi-Fi сети
+            или открытые публичные сети...
+          </p>
+          <button id="card-button4">Смотреть Далее -></button>
+        </div>
+
+        <div class="card card5">
+          <img src="./images/pass.png" alt="" />
+          <p id="card5">
+            Включите двухфакторную аутентификацию. Двухфакторная аутентификация
+            добавляет дополнительный уровень безопасности к вашему аккаунту...
+          </p>
+          <button id="card-button5">Смотреть Далее -></button>
+        </div>
+
+        <div class="card card6">
+          <img src="./images/account.png" alt="" />
+          <p id="card6">
+            Постоянно следите за безопасностью своих аккаунтов. Проверяйте
+            активность входа в свои аккаунты, отслеживайте подозрительную
+            активность...
+          </p>
+          <button id="card-button6">Смотреть Далее -></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="navigation">
+      <h1>Навигация по сайту</h1>
+      <ul>
+        <li><a href="#article">Статья</a></li>
+        <li><a href="#advise">Советы</a></li>
+        <li>
+          <a
+            onclick="fadeOut(block, 400, './encryptionPage/encryption.html');"
+            style="user-select: none"
+            >Шифратор текста</a
+          >
+        </li>
+        <li>
+          <a
+            onclick="fadeOut(block, 400, './passwordPage/passworg.html');"
+            style="user-select: none"
+            >Генератор паролей</a
+          >
+        </li>
+        <li>
+          <a
+            onclick="fadeOut(block, 400, './registrationPage/registrationPage.html');"
+            style="user-select: none"
+            >Зарегистрироваться/Авторизироваться</a
+          >
+        </li>
+      </ul>
+      <hr class="hr1" />
+    </section>
+
+    <section id="footer">
+      <div>
+        <h1>WebSecurityKz</h1>
+        <p style="opacity: 0.9">
+          Сделано специально для хакатона при поддержке....
+        </p>
+      </div>
+      <div>
+        <div>
+          <img
+            src="./images/1685042560_fons-pibig-info-p-znachok-chelovechka-10.png"
+            alt=""
+          />
+        </div>
+        <p>© Qoziwe, 2024</p>
+      </div>
+    </section>
+  </body>
+  <script src="./index.js"></script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./registrationPage.css" />
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+    <title>Цифровая безопасность</title>
+  </head>
+  <body>
+    <header>
+      <div
+        style="
+          display: flex;
+          gap: 1.5vw;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <img src="../images/siteLogo.png" alt="" />
+        <h2 style="margin: 0" onclick="fadeOut(block, 400, '../index.html');">
+          #СохранимСебяВБезопасности
+        </h2>
+      </div>
+      <div>
+        <a
+          href=""
+          class="welcome-link"
+          style="pointer-events: none; color: rgb(150, 150, 150)"
+          >О нас</a
+        >
+        <a
+          onclick="fadeOut(block, 400, '../encryptionPage/encryption.html');"
+          class="welcome-link"
+          >Шифрование текста</a
+        >
+        <a
+          onclick="fadeOut(block, 400, '../passwordPage/passworg.html');"
+          class="welcome-link"
+          >Генератор паролей</a
+        >
+      </div>
+      <div style="margin-right: 3vw"></div>
+    </header>
+
+    <section id="regform">
+      <div class="regform-container">
+        <div><h1>Зарегистрироваться</h1></div>
+        <div class="form">
+          <div class="username">
+            <p>Имя Пользователя</p>
+            <input type="text" placeholder="Логин" id="login" />
+          </div>
+          <div class="password">
+            <p>Пароль</p>
+            <input type="password" placeholder="Пароль" id="password" />
+          </div>
+        </div>
+        <div class="regform-buttons">
+          <button id="signin">Отправить</button>
+          <button
+            id="formchange"
+            onclick="fadeOut(block, 400, '../index.html');"
+          >
+            <a style="color: aliceblue"
+              >Вы уже зарегистрированы? Нажмите Сюда</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./registrationPage.js"></script>
+</html>

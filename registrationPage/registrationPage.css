@@ -1,0 +1,240 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  user-select: none;
+  opacity: 0;
+  background-image: linear-gradient(
+      116deg,
+      rgba(232, 232, 232, 0.03) 0%,
+      rgba(232, 232, 232, 0.03) 10%,
+      rgba(14, 14, 14, 0.03) 10%,
+      rgba(14, 14, 14, 0.03) 66%,
+      rgba(232, 232, 232, 0.03) 66%,
+      rgba(232, 232, 232, 0.03) 72%,
+      rgba(44, 44, 44, 0.03) 72%,
+      rgba(44, 44, 44, 0.03) 81%,
+      rgba(51, 51, 51, 0.03) 81%,
+      rgba(51, 51, 51, 0.03) 100%
+    ),
+    linear-gradient(
+      109deg,
+      rgba(155, 155, 155, 0.03) 0%,
+      rgba(155, 155, 155, 0.03) 23%,
+      rgba(30, 30, 30, 0.03) 23%,
+      rgba(30, 30, 30, 0.03) 63%,
+      rgba(124, 124, 124, 0.03) 63%,
+      rgba(124, 124, 124, 0.03) 73%,
+      rgba(195, 195, 195, 0.03) 73%,
+      rgba(195, 195, 195, 0.03) 84%,
+      rgba(187, 187, 187, 0.03) 84%,
+      rgba(187, 187, 187, 0.03) 100%
+    ),
+    linear-gradient(
+      79deg,
+      rgba(254, 254, 254, 0.03) 0%,
+      rgba(254, 254, 254, 0.03) 27%,
+      rgba(180, 180, 180, 0.03) 27%,
+      rgba(180, 180, 180, 0.03) 33%,
+      rgba(167, 167, 167, 0.03) 33%,
+      rgba(167, 167, 167, 0.03) 34%,
+      rgba(68, 68, 68, 0.03) 34%,
+      rgba(68, 68, 68, 0.03) 63%,
+      rgba(171, 171, 171, 0.03) 63%,
+      rgba(171, 171, 171, 0.03) 100%
+    ),
+    linear-gradient(
+      109deg,
+      rgba(71, 71, 71, 0.03) 0%,
+      rgba(71, 71, 71, 0.03) 3%,
+      rgba(97, 97, 97, 0.03) 3%,
+      rgba(97, 97, 97, 0.03) 40%,
+      rgba(40, 40, 40, 0.03) 40%,
+      rgba(40, 40, 40, 0.03) 55%,
+      rgba(5, 5, 5, 0.03) 55%,
+      rgba(5, 5, 5, 0.03) 73%,
+      rgba(242, 242, 242, 0.03) 73%,
+      rgba(242, 242, 242, 0.03) 100%
+    ),
+    linear-gradient(
+      271deg,
+      rgba(70, 70, 70, 0.03) 0%,
+      rgba(70, 70, 70, 0.03) 11%,
+      rgba(178, 178, 178, 0.03) 11%,
+      rgba(178, 178, 178, 0.03) 23%,
+      rgba(28, 28, 28, 0.03) 23%,
+      rgba(28, 28, 28, 0.03) 72%,
+      rgba(152, 152, 152, 0.03) 72%,
+      rgba(152, 152, 152, 0.03) 86%,
+      rgba(43, 43, 43, 0.03) 86%,
+      rgba(43, 43, 43, 0.03) 100%
+    ),
+    linear-gradient(90deg, rgb(27, 27, 27), rgb(1, 1, 1));
+  margin: 0;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  background-color: rgb(41, 41, 46);
+  height: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2vw;
+  color: aliceblue;
+  font-size: 1vw;
+  font-family: monospace;
+  user-select: none;
+}
+header img {
+  width: 5vw;
+}
+.welcome-link {
+  display: inline-block;
+  color: rgba(240, 248, 255, 0.801);
+  margin-right: 1.5vw;
+  word-spacing: -0.1vw;
+}
+.welcome-link:after {
+  display: block;
+  content: "";
+  height: 0.1vw;
+  width: 0%;
+  background-color: aliceblue;
+  transition: width 200ms ease-in-out;
+}
+.welcome-link:hover:after,
+.welcome-link:focus:after {
+  width: 100%;
+}
+.welcome-link:hover {
+  color: aliceblue;
+}
+
+/* REGFORM */
+#regform {
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.regform-container {
+  background-color: rgba(39, 39, 39, 0.616);
+  width: 25vw;
+  height: 28vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 2vw;
+  padding: 3vw 2vw 2vw 2vw;
+  color: aliceblue;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 4vw;
+}
+h1 {
+  margin: 0;
+  font-size: 2vw;
+}
+p {
+  margin: 0;
+  font-size: 1.1vw;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+  gap: 2vw;
+}
+input {
+  background-color: rgba(49, 49, 49, 0.719);
+  width: 22vw;
+  height: 3vw;
+  margin-top: 0.5vw;
+  padding-left: 1vw;
+  color: rgba(240, 248, 255, 0.829);
+  font-size: 0.945vw;
+  border-radius: 0.8vw;
+  border: 0;
+}
+.regform-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8vw;
+  flex-direction: column;
+}
+button:nth-child(1) {
+  background-color: rgb(203, 207, 207);
+  width: 22vw;
+  height: 3.5vw;
+  color: rgb(34, 34, 34);
+  font-size: 1vw;
+  border-radius: 1.5vw;
+  border: 0;
+  transition: ease-in-out 100ms;
+}
+button:nth-child(1):hover {
+  scale: 1.1;
+}
+button:nth-child(2) {
+  background-color: rgba(83, 83, 83, 0.596);
+  width: 20vw;
+  height: 3vw;
+  color: aliceblue;
+  font-size: 0.85vw;
+  border-radius: 1vw;
+  border: 0;
+}
+@media (max-width: 700px) {
+  header {
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 3vw;
+    gap: 2vw;
+    justify-content: center;
+  }
+  #regform {
+    height: 90vh;
+  }
+  .regform-container {
+    width: 65vw;
+    height: 40vh;
+    padding: 10vw 5vw 10vw 5vw;
+  }
+  h1 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 5vw;
+  }
+  input {
+    width: 55vw;
+    height: 5vh;
+    font-size: 4vw;
+  }
+  button:nth-child(1) {
+    width: 55vw;
+    height: 5vh;
+    border-radius: 3vw;
+    font-size: 3.8vw;
+  }
+  button:nth-child(2) {
+    width: 45vw;
+    height: 5vh;
+    font-size: 2.5vw;
+    border-radius: 3vw;
+  }
+}

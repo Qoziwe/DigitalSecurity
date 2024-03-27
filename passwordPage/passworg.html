@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./password.css" />
+    <title>Цифровая безопасность</title>
+  </head>
+  <body>
+    <header>
+      <div
+        style="
+          display: flex;
+          gap: 1.5vw;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <img src="../images/siteLogo.png" alt="" />
+        <h2
+          style="margin: 0"
+          onclick="fadeOut(block, 400, '../index.html');"
+        >
+          #СохранимСебяВБезопасности
+        </h2>
+      </div>
+      <div>
+        <a
+          href=""
+          class="welcome-link"
+          style="pointer-events: none; color: rgb(150, 150, 150)"
+          >О нас</a
+        >
+        <a
+          onclick="fadeOut(block, 400, '../encryptionPage/encryption.html');"
+          class="welcome-link"
+          >Шифрование текста</a
+        >
+        <a
+          onclick="fadeOut(block, 400, '../passwordPage/passworg.html');"
+          class="welcome-link"
+          >Генератор паролей</a
+        >
+      </div>
+      <div style="margin-right: 3vw">
+        <a
+          class="authorization"
+          id="user"
+          onclick="fadeOut(block, 400, '../registrationPage/registrationPage.html');"
+          >Войти / Зарегистрироваться</a
+        >
+      </div>
+    </header>
+
+    <section id="password">
+      <div class="passwordmain">
+        <div class="passwordtext">
+          <h1>Генератор безопасных паролей</h1>
+          <p>
+            Безопасный и хороший пароль необходим, чтобы защитить личные данные
+            и информацию от хакеров и киберпреступников. Используя сложные и
+            уникальные пароли, вы уменьшаете риск взлома вашей учетной записи и
+            сохраняете конфиденциальность своих документов, финансов и личной
+            информации. Кроме того, хороший пароль помогает предотвратить кражу
+            личности и другие виды мошенничества, связанные с доступом к вашему
+            аккаунту. Поэтому важно следить за безопасностью своих паролей и
+            регулярно их обновлять.
+          </p>
+        </div>
+        <div class="passwordform">
+          <div class="inputform">
+            <input type="text" readonly id="passwordoutput"/>
+            <input type="text" readonly id="passwordstat"/>
+            <button onclick="generatePassword()" id="rebootpassword"><img src="../images/reboot.png" alt="" /></button>
+            <button onclick="copyPassword()"><img src="../images/copy.png" alt="" /></button>
+          </div>
+          <div class="passwordconditions">
+            <p>
+              Длина строки: <div id="strlen"></div>
+              <input type="range" min="5" max="20" id="inputrange" value="8"/>
+            </p>
+            <p>Верхний регистр <input type="checkbox" id="upcase" value="off"/></p>
+            <p>Нижний регистр <input type="checkbox" id="lowcase" value="off"/></p>
+            <p>Цифры <input type="checkbox" id="numbers" value="off"/></p>
+            <p>Специальные символы <input type="checkbox" id="spsymbols" value="off"/></p>
+          </div>
+        </div>
+        <button id="startbut" onclick="generatePassword()">Создать пароль</button>
+      </div>
+    </section>
+
+    <section id="navigation">
+      <h1>Навигация по сайту</h1>
+      <ul>
+        <li>
+          <a
+            onclick="fadeOut(block, 400, '../index.html');"
+            style="user-select: none"
+            >Главная</a
+          >
+        </li>
+        <li>
+          <a
+            onclick="fadeOut(block, 400, '../encryptionPage/encryption.html');"
+            style="user-select: none"
+            >Шифратор текста</a
+          >
+        </li>
+        <li>
+          <a
+            onclick="fadeOut(block, 400, '../passwordPage/passworg.html');"
+            style="user-select: none"
+            >Генератор паролей</a
+          >
+        </li>
+        <li>
+          <a
+            onclick="fadeOut(block, 400, '../registrationPage/registrationPage.html');"
+            style="user-select: none"
+            >Зарегистрироваться/Авторизироваться</a
+          >
+        </li>
+      </ul>
+      <hr class="hr1" />
+    </section>
+
+    <section id="footer">
+      <div>
+        <h1>WebSecurityKz</h1>
+        <p style="opacity: 0.9">
+          Сделано специально для хакатона при поддержке....
+        </p>
+      </div>
+      <div>
+        <div>
+          <img
+            src="../images/1685042560_fons-pibig-info-p-znachok-chelovechka-10.png"
+            alt=""
+          />
+        </div>
+        <p>© Qoziwe, 2024</p>
+      </div>
+    </section>
+  </body>
+  <script src="./password.js"></script>
+</html>

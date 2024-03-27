@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./encryption.css" />
+    <title>Цифровая безопасность</title>
+  </head>
+  <body>
+    <header>
+      <div
+        style="
+          display: flex;
+          gap: 1.5vw;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <img src="../images/siteLogo.png" alt="" />
+        <h2 style="margin: 0" onclick="fadeOut(block, 400, '../index.html');">
+          #СохранимСебяВБезопасности
+        </h2>
+      </div>
+      <div>
+        <a
+          href=""
+          class="welcome-link"
+          style="pointer-events: none; color: rgb(150, 150, 150)"
+          >О нас</a
+        >
+        <a
+          onclick="fadeOut(block, 400, '../encryptionPage/encryption.html');"
+          class="welcome-link"
+          >Шифрование текста</a
+        >
+        <a
+          onclick="fadeOut(block, 400, '../passwordPage/passworg.html');"
+          class="welcome-link"
+          >Генератор паролей</a
+        >
+      </div>
+      <div style="margin-right: 3vw">
+        <a
+          class="authorization"
+          id="user"
+          onclick="fadeOut(block, 400, '../registrationPage/registrationPage.html');"
+          >Войти / Зарегистрироваться</a
+        >
+      </div>
+    </header>
+
+    <section id="encryption">
+      <div class="encryptionmain">
+        <div class="encryptiontext">
+          <h1>Онлайн шифрование текста</h1>
+          <p>
+            Шифрование данных необходимо для защиты конфиденциальности и
+            целостности информации. Оно позволяет предотвратить
+            несанкционированный доступ к данным, их кражу и изменение. Кроме
+            того, шифрование обеспечивает безопасную передачу информации через
+            открытые сети, такие как интернет, и защищает данные от угроз
+            различного рода, таких как вирусы, хакерские атаки и другие.
+          </p>
+        </div>
+        <div class="encryptionform">
+          <div class="inputform">
+            <input type="text" id="encryptioninput" />
+            <!-- <button><img src="../images/reboot.png" alt="" /></button> -->
+            <button onclick="encryptionCopy()">
+              <img src="../images/copy.png" alt="" />
+            </button>
+          </div>
+          <div class="encryptionconditions">
+            <p>md5 <input type="checkbox" id="md5" /></p>
+            <p>crc32 <input type="checkbox" id="crc32" /></p>
+            <p>sha1 <input type="checkbox" id="sha1" /></p>
+            <p>sha256 <input type="checkbox" id="sha256" /></p>
+            <p>sha512 <input type="checkbox" id="sha512" /></p>
+          </div>
+        </div>
+        <button id="startbut" onclick="encryptionGenerate()">
+          Зашифровать текст
+        </button>
+      </div>
+    </section>
+
+    <section id="navigation">
+      <h1>Навигация по сайту</h1>
+      <ul>
+        <li>
+          <a
+            onclick="fadeOut(block, 400, '../index.html');"
+            style="user-select: none"
+            >Главная</a
+          >
+        </li>
+        <li>
+          <a
+            onclick="fadeOut(block, 400, '../encryptionPage/encryption.html');"
+            style="user-select: none"
+            >Шифратор текста</a
+          >
+        </li>
+        <li>
+          <a
+            onclick="fadeOut(block, 400, '../passwordPage/passworg.html');"
+            style="user-select: none"
+            >Генератор паролей</a
+          >
+        </li>
+        <li>
+          <a
+            onclick="fadeOut(block, 400, '../registrationPage/registrationPage.html');"
+            style="user-select: none"
+            >Зарегистрироваться/Авторизироваться</a
+          >
+        </li>
+      </ul>
+      <hr class="hr1" />
+    </section>
+
+    <section id="footer">
+      <div>
+        <h1>WebSecurityKz</h1>
+        <p style="opacity: 0.9">
+          Сделано специально для хакатона при поддержке....
+        </p>
+      </div>
+      <div>
+        <div>
+          <img
+            src="../images/1685042560_fons-pibig-info-p-znachok-chelovechka-10.png"
+            alt=""
+          />
+        </div>
+        <p>© Qoziwe, 2024</p>
+      </div>
+    </section>
+  </body>
+  <script src="./encryption.js"></script>
+  <script src="js/md5.min.js"></script>
+</html>
